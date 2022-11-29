@@ -1,0 +1,216 @@
+slick-track,
+.slick-list {
+    transition-delay: 0.03s;
+}
+
+
+/* topBanner */
+.topBanner {
+    position: relative;
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.topBanner.on {
+    height: 0;
+    padding: 0 0;
+    overflow: hidden;
+}
+
+.topBanner .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBanner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.topBanner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+}
+
+.topBanner a {
+    margin: 0 0 0 15px;
+    padding: 3px 20px 5px 20px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 20px;
+    vertical-align: 2px;
+}
+
+
+
+
+
+/* header */
+
+.header h1 {
+    font-size: 0;
+}
+
+.header .inner {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1200px;
+    margin: 0 auto;
+
+    line-height: 100px;
+}
+
+.header .gnb {
+    margin: 0 0 0 30px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -50%);
+
+    width: 1px;
+    height: 12px;
+    background: #999;
+}
+
+.header .gnb>ul>a {
+    display: block;
+}
+
+.header .right {
+    margin: 0 0 0 auto;
+}
+
+
+
+/* mainVisual */
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1200px;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+
+    font-size: 0;
+
+    width: 100px;
+    height: 100px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #f9f9f9;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #333;
+}
+
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide .slick-dots>li:nth-child(1).slick-active {
+    background: #f00;
+}
+
+.mainVisual .mainSlide .slick-dots>li:nth-child(2).slick-active {
+    background: #00f;
+}
+
+.mainVisual .mainSlide .slick-dots>li:nth-child(3).slick-active {
+    background: #ff0;
+}
+
+.mainVisual .mainSlide h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 3px #000;
+}
+
+.mainVisual .mainSlide p {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.mainVisual .mainSlide .inner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
